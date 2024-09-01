@@ -574,6 +574,75 @@ header .search-bar-container label:hover
 }
 
 
+.contact .row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    align-items: center; 
+}
+.contact .row .image
+{
+    flex: 1 1 35rem;
+
+}
+.contact .row .image img
+{
+    width: 100%;
+
+}
+.contact .row form
+{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.contact .row form .inputBox
+{
+    position: relative;
+    display: inline-block;
+    width: 49%;
+
+}
+.contact .row form .inputBox input,.contact .row form textarea
+{
+    width:100%;
+    margin: 1rem 0;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #f7f7f7;
+}
+.contact .row form .inputBox #icon-box
+{
+    position: absolute;
+    top: 2.1rem;
+    left: 1rem;
+    font-size: 1.8rem;
+}
+
+
+.contact .row form textarea
+{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+.contact .row form #textarea-icon
+{
+    position: relative;
+}
+.contact .row form #textarea-icon #icon-text
+{
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    
+}
+
+
 /* MEDIA QUERIES */
 
 @media(max-width:1200px)
