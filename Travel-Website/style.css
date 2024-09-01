@@ -580,6 +580,7 @@ header .search-bar-container label:hover
     flex-wrap: wrap;
     gap: 1.5rem; 
     align-items: center; 
+    margin-top: .4rem;
 }
 .contact .row .image
 {
