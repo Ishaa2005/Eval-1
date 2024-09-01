@@ -515,6 +515,65 @@ header .search-bar-container label:hover
 }
 
 
+.review .review-slider
+{
+
+    margin-top: 1rem;
+}
+.review .review-slider .wrapper
+{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.review .slider
+{
+    flex:1 1 30rem;
+    
+}
+
+
+.review .box
+{
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40rem;
+}
+
+
+.review .box img
+{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+}
+.review .box h3
+{
+    color: #333;
+    font-size: 2.5rem;
+}
+.review .box p
+{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: justify;
+}
+.review .box .stars i
+{
+    color:var(--orange);
+    font-size: 1.7rem;
+}
+
+
 /* MEDIA QUERIES */
 
 @media(max-width:1200px)
