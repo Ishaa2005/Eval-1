@@ -749,7 +749,6 @@ header .search-bar-container label:hover
     #menu-bar
     {
         display: initial;
-
     }
 
     header .navbar
@@ -775,7 +774,14 @@ header .search-bar-container label:hover
         margin: 1.5rem 0;
         background: #222;
     }
+    .packages .box-container .box:hover
+    {
+    transform: none;
+   
+    }
+
 }
+    
     @media(max-width:450px)
 {
 
@@ -787,6 +793,16 @@ header .search-bar-container label:hover
     {
         font-size: 2.5rem;
     }
+
+    .contact .row form .inputBox
+    {
+    
+        display: block;
+        width: 100%;
+
+    }
+    
 }
+
 
 
