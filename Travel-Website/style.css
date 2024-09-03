@@ -411,18 +411,19 @@ header .search-bar-container label:hover
 
 .services .box-container
 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    grid-template-rows:repeat(2,1fr);
     margin-top:.5rem;
 }
 
 .services .box-container .box
 {
-    flex:1 1 30rem;
     border-radius: .5rem;
     padding: 1rem;
     text-align: center;
+    
 }
 
 .services .box-container .box i
