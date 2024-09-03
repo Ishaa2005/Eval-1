@@ -750,8 +750,9 @@ header .search-bar-container label:hover
 
 
 
-
 /* MEDIA QUERIES */
+
+
 
 @media(max-width:1200px)
 {
@@ -761,6 +762,7 @@ header .search-bar-container label:hover
         font-size: 55%;
     }
 }
+
 @media(max-width:991px)
 {
 
@@ -773,6 +775,34 @@ header .search-bar-container label:hover
         padding: 2rem;
     }
 }
+
+@media (max-width:850px) 
+{
+    .packages .box-container
+    {
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3,1fr) ;
+    
+    }
+    .services .box-container
+    {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3,1fr);
+    
+    }
+    
+    .footer .box-container
+    {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    }
+
+    
+}
+
 @media(max-width:768px)
 {
 
@@ -804,12 +834,62 @@ header .search-bar-container label:hover
         margin: 1.5rem 0;
         background: #222;
     }
+    
+    .gallery .box-container
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,32rem);
+    }
+    .gallery .box-container #img1,
+    .gallery .box-container #img7,
+    .gallery .box-container #img6,
+    .gallery .box-container #img12
+    {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .gallery .box-container #img1 h3,#img6 h3,#img7 h3,#img12 h3
+    {
+    font-size: 2rem;
+    }
+    .gallery .box-container #img1 p,#img6 p,#img7 p,#img12 p
+    {
+    font-size: 1rem;
+    }
+    .review .review-slider .wrapper
+    {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    }
+
+
+}
+@media (max-width:600px) 
+{
+    .packages .box-container
+    {
+    
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    
+    }
+    .services .box-container
+    {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:repeat(6,1fr);
+    }
     .packages .box-container .box:hover
     {
     transform: none;
    
     }
-
+    .gallery .box-container
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12,32rem);
+    }
+    
 }
     
     @media(max-width:450px)
@@ -829,10 +909,9 @@ header .search-bar-container label:hover
     
         display: block;
         width: 100%;
-
     }
-    
+    .footer .credit
+    {
+        margin-top: .1rem;
+    }
 }
-
-
-
